@@ -1,7 +1,7 @@
-import type { AppRouteModule } from '/@/router/types'
+import type { AppRouteModule } from '@/router/types';
 
-import { LAYOUT } from '/@/router/constant'
-import { t } from '/@/hooks/web/useI18n'
+import { LAYOUT } from '@/router/constant';
+import { t } from '@/hooks/web/useI18n';
 
 const dashboard: AppRouteModule = {
   path: '/dashboard',
@@ -9,29 +9,22 @@ const dashboard: AppRouteModule = {
   component: LAYOUT,
   redirect: '/dashboard/analysis',
   meta: {
-    orderNo: 10,
+    orderNo: 0,
+    hideChildrenInMenu: true,
     icon: 'ion:grid-outline',
-    title: t('routes.dashboard.dashboard'),
+     title: '首页'
   },
   children: [
     {
       path: 'analysis',
       name: 'Analysis',
-      component: () => import('/@/views/dashboard/analysis/index.vue'),
+      component: () => import('@/views/dashboard/analysis/index.vue'),
       meta: {
         // affix: true,
-        title: t('routes.dashboard.analysis'),
-      },
-    },
-    {
-      path: 'workbench',
-      name: 'Workbench',
-      component: () => import('/@/views/dashboard/workbench/index.vue'),
-      meta: {
-        title: t('routes.dashboard.workbench'),
+        title: '首页'
       },
     },
   ],
-}
+};
 
-export default dashboard
+export default dashboard;
