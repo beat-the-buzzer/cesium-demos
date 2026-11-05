@@ -32,6 +32,14 @@ const cesuim: AppRouteModule = {
             title: '第一个例子',
           },
         },
+        {
+          path: 'setting',
+          name: 'Setting',
+          component: () => import('@/views/cesium/basic/setting.vue'),
+          meta: {
+            title: '初始化设置项',
+          },
+        },
       ],
     },
   ],

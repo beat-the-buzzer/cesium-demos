@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="custom-controls">
+    <div class="custom-controls" v-if="false">
       <div class="cesium-button custom-btn" title="飞到示例点" @click="flyToExamplePoint">
-        飞到示例点(0米)
+        飞到示例点(默认高度)
       </div>
       <div class="cesium-button custom-btn" title="飞到指定坐标和高度" @click="flyToSpecifiedPosition">
         飞到指定坐标和高度(1500000米)
@@ -103,7 +103,9 @@ onMounted(() => {
   viewer.value = currentViewer;
   window.viewer = currentViewer; // 将 Cesium Viewer 实例挂载到全局，方便调试
   // currentViewer.scene.debugShowFramesPerSecond = true; // 展示fps
-  (currentViewer.cesiumWidget.creditContainer as HTMLElement).style.display = "none"; // 底部logo 版权等信息隐藏
+  // (currentViewer.cesiumWidget.creditContainer as HTMLElement).style.display = "none"; // 底部logo 版权等信息隐藏
+
+  return
 
   // 添加一个实体（详见中文版 API：Entity、Cartesian3、Color）
   myPoint = currentViewer.entities.add({
@@ -321,8 +323,8 @@ onMounted(() => {
 
 <style scoped>
 #cesiumContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 80px);
   margin: 0;
   padding: 0;
   overflow: hidden;

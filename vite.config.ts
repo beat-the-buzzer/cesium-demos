@@ -3,6 +3,9 @@ import { defineApplicationConfig } from '@vben/vite-config';
 export default defineApplicationConfig({
   overrides: {
     optimizeDeps: {
+      esbuildOptions: {
+        target: 'es2022',
+      },
       include: [
         'echarts/core',
         'echarts/charts',
@@ -13,6 +16,9 @@ export default defineApplicationConfig({
         'ant-design-vue/es/locale/zh_CN',
         'ant-design-vue/es/locale/en_US',
       ],
+    },
+    build: {
+      target: 'es2022',
     },
     server: {
       proxy: {
