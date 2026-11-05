@@ -1,5 +1,6 @@
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import cesium from 'vite-plugin-cesium'
 import { type PluginOption } from 'vite';
 import purgeIcons from 'vite-plugin-purge-icons';
 import DevTools from 'vite-plugin-vue-devtools';
@@ -20,7 +21,7 @@ interface Options {
 }
 
 async function createPlugins({ isBuild, root, enableMock, compress, enableAnalyze }: Options) {
-  const vitePlugins: (PluginOption | PluginOption[])[] = [vue(), vueJsx()];
+  const vitePlugins: (PluginOption | PluginOption[])[] = [vue(), vueJsx(), cesium()];
 
   const appConfigPlugin = await createAppConfigPlugin({ root, isBuild });
   vitePlugins.push(appConfigPlugin);

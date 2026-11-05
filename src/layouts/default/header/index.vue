@@ -33,7 +33,6 @@
 
     <!-- action  -->
     <div :class="`${prefixCls}-action`">
-      <UpgradePrompt class="mr-2" />
 
       <AppSearch v-if="getShowSearch" :class="`${prefixCls}-action__item `" />
 

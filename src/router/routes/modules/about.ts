@@ -13,7 +13,7 @@ const about: AppRouteModule = {
     icon: 'simple-icons:aboutdotme',
     title: t('routes.dashboard.about'),
     orderNo: 100000,
-    roles: ['admin'],
+    roles: ['admin111'],
   },
   children: [
     {
