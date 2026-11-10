@@ -105,7 +105,7 @@ onMounted(() => {
   // currentViewer.scene.debugShowFramesPerSecond = true; // 展示fps
   // (currentViewer.cesiumWidget.creditContainer as HTMLElement).style.display = "none"; // 底部logo 版权等信息隐藏
 
-  return
+  
 
   // 添加一个实体（详见中文版 API：Entity、Cartesian3、Color）
   myPoint = currentViewer.entities.add({

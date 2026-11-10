@@ -37,7 +37,16 @@ const cesuim: AppRouteModule = {
           name: 'Setting',
           component: () => import('@/views/cesium/basic/setting.vue'),
           meta: {
-            title: '初始化设置项',
+            title: '设置项',
+          },
+        },
+
+        {
+          path: 'position',
+          name: 'Position',
+          component: () => import('@/views/cesium/basic/position.vue'),
+          meta: {
+            title: '坐标系',
           },
         },
       ],
