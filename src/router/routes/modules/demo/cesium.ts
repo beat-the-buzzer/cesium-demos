@@ -49,6 +49,15 @@ const cesuim: AppRouteModule = {
             title: '坐标系',
           },
         },
+
+        {
+          path: 'camera',
+          name: 'Camera',
+          component: () => import('@/views/cesium/basic/camera.vue'),
+          meta: {
+            title: '相机系统',
+          },
+        },
       ],
     },
   ],
