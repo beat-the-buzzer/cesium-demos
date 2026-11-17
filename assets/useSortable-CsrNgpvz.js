@@ -1,0 +1,1 @@
+import{a as n}from"./entry/index-2p-jChXC.js";import{y as o,u as i}from"./vue-9Ud1LID3.js";function c(t,a){function e(){o(async()=>{if(t=i(t),!t)return;(await n(async()=>{const{default:r}=await import("./sortable.esm-Dcxlylh0.js");return{default:r}},[])).default.create(t,{animation:100,delay:400,delayOnTouchOnly:!0,...a})})}return{initSortable:e}}export{c as u};

@@ -1,0 +1,1 @@
+import{a as i}from"./antd-CW-Gcvvf.js";import{r as l,h as m,g as f,c as v,a2 as g,y as d,J as h,u as S}from"./vue-9Ud1LID3.js";function I(a,n="value",r="change",u){const c=f()?.emit,t=l({value:a[n]}),s=g(t),o=e=>{t.value=e};return m(()=>{t.value=a[n]}),[v({get(){return t.value},set(e){i(e,s.value)||(t.value=e,d(()=>{c?.(r,e,...h(S(u))||[])}))}}),o,s]}export{I as u};
