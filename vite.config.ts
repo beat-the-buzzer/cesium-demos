@@ -20,6 +20,10 @@ export default defineApplicationConfig({
     build: {
       target: 'es2022',
     },
+    worker: {
+      // satellite.js 的 WASM Worker 使用顶层 await，不能打包为默认的 IIFE 格式
+      format: 'es',
+    },
     server: {
       proxy: {
         '/basic-api': {
