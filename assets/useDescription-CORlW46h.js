@@ -1,1 +1,0 @@
-import{v as c}from"./entry/index-BCUSSIbA.js";import{g as i,u as t,f as n}from"./vue-9Ud1LID3.js";function l(s){if(!i())throw new Error("useDescription() can only be used inside setup() or functional components!");const o=n(null),r=n(!1);function u(e){t(r)&&c()||(o.value=e,s&&e.setDescProps(s),r.value=!0)}return[u,{setDescProps:e=>{t(o)?.setDescProps(e)}}]}export{l as u};

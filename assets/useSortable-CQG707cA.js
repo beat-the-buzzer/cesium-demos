@@ -1,1 +1,0 @@
-import{a as o}from"./entry/index-BCUSSIbA.js";import{y as n,u as i}from"./vue-9Ud1LID3.js";function l(t,a){function r(){n(async()=>{if(t=i(t),!t)return;(await o(async()=>{const{default:e}=await import("./sortable.esm-Dcxlylh0.js");return{default:e}},[],import.meta.url)).default.create(t,{animation:100,delay:400,delayOnTouchOnly:!0,...a})})}return{initSortable:r}}export{l as u};
