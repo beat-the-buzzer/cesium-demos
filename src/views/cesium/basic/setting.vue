@@ -49,18 +49,19 @@ onMounted(() => {
   currentViewer.cesiumWidget.creditContainer.style.display = "none";
   currentViewer.scene.debugShowFramesPerSecond = true; // 展示fps
 
+  let proUrl = import.meta.env.DEV ? '' : '/cesium-demos'
+
   // 天空盒
   currentViewer.scene.skyBox = new Cesium.SkyBox({
-    sources : {
-      positiveX: "/skybox/px.jpg",
-      negativeX: "/skybox/nx.jpg",
-      positiveY: "/skybox/py.jpg",
-      negativeY: "/skybox/ny.jpg",
-      positiveZ: "/skybox/nz.jpg",
-      negativeZ: "/skybox/pz.jpg",
+    sources: {
+      positiveX: `${proUrl}/skybox/px.jpg`,
+      negativeX: `${proUrl}/skybox/nx.jpg`,
+      positiveY: `${proUrl}/skybox/py.jpg`,
+      negativeY: `${proUrl}/skybox/ny.jpg`,
+      positiveZ: `${proUrl}/skybox/nz.jpg`,
+      negativeZ: `${proUrl}/skybox/pz.jpg`,
     },
   });
-
   
 
   
