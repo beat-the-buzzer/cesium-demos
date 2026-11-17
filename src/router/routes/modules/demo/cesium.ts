@@ -58,6 +58,49 @@ const cesuim: AppRouteModule = {
             title: '相机系统',
           },
         },
+        {
+          path: 'geometry-entity',
+          name: 'GeometryEntity',
+          component: () => import('@/views/cesium/basic/geometry-entity.vue'),
+          meta: {
+            title: '几何体(entity)',
+          },
+        },
+        {
+          path: 'geometry-primitive',
+          name: 'GeometryPrimitive',
+          component: () => import('@/views/cesium/basic/geometry-primitive.vue'),
+          meta: {
+            title: '几何体(primitive)',
+          },
+        },
+        {
+          path: 'events',
+          name: 'Events',
+          component: () => import('@/views/cesium/basic/events.vue'),
+          meta: {
+            title: '事件',
+          },
+        },
+      ],
+    },
+    {
+      path: 'app',
+      name: 'AppDemo',
+      component: LAYOUT,
+      meta: {
+        title: '应用Demo',
+      },
+      children: [
+        {
+          path: 'performance',
+          name: 'Performance',
+          component: () => import('@/views/cesium/app/performance.vue'),
+          meta: {
+            title: '性能面板',
+          },
+        },
+    
       ],
     },
   ],

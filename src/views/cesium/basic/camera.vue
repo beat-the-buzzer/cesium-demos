@@ -53,9 +53,9 @@
         <div class="section-title">viewBoundingSphere — 按范围取景</div>
         <p class="section-desc">自动调整相机让目标范围全部入镜</p>
         <div class="btn-group">
-          <button class="btn" @click="viewBoundingChina">中国范围</button>
           <button class="btn" @click="viewBoundingEurope">欧洲范围</button>
           <button class="btn" @click="viewBoundingUS">美国范围</button>
+          <button class="btn" @click="viewBoundingChina">中国范围</button>
         </div>
       </div>
 
