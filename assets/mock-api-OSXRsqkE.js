@@ -1,1 +1,0 @@
-import{b3 as i}from"./entry/index-BpxyQ0V5.js";async function m(e,t=!0){return new Promise((r,o)=>{setTimeout(()=>{t?r(e??i.mock("@name")):o(new Error(`Failed to modify username: ${e}`))},1250)})}async function n(e){return new Promise(t=>{setTimeout(()=>{t({data:i.mock("@paragraph"),time:new Date().getTime(),keyword:e})},1e3)})}export{n as g,m as i};
